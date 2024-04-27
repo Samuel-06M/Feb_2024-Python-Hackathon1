@@ -1,20 +1,16 @@
-# Python Bootcamp & Hackathon
+Random Content Display
+This Django application displays a random fact, a random dog image, and a random student's name on a webpage. The name of the student is randomized each time the page is reloaded.
 
-**Note:** Clone this repo 
-``` git clone https://github.com/PLPAfrica/Feb-2024-PythonHack2.git ``` or simply click on ```Fork```
 
-Objectives
-During this bootcamp and hackathon, we will create a Blog website and weather app using a Third-party API, we are aiming to:
-- Understand JSON
-- Understand how to work with Static files in Django
-- Understand API
-- Understand software development & Deployments
-- Understand software testing with ```pytest```
-- Understand Database integration with Python Django
+Run the development server using python manage.py runserver.
 
-By the end of the bootcamp/sessions, you will be required to submit a project.
-**Note:** Clone this repo, edit to the requirements/instructions assigned by the Instructor
-- Submit the code for review
-- Note that the Best project will be rewarded with a **certificate** and **some dollars** 😊
+Access the application at http://localhost:8000/.
 
-  ## Note that the code will be updated everytime in class
+Code Explanation
+The views.py file contains the index() function that handles the rendering of the webpage.
+The function makes requests to external APIs to fetch random facts, a random dog image, and a list of students.
+A random student's name is selected and passed to the template for display.
+Template
+The index.html template displays the fetched data on the webpage.
+
+It dynamically renders the random fact, dog image, and student's name using the Django template language.
